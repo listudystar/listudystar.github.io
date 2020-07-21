@@ -1,376 +1,556 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>Home</title>
-<!-- for-mobile-apps -->
+<!-- mobile apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //mobile apps -->
+<!-- Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all"> 
+<link rel="stylesheet" href="css/easy-responsive-tabs.css"><!-- tabs-css -->
+<link rel="stylesheet" href="css/lightbox.css"><!-- lightbox-css -->
+<link href="css/font-awesome.css" rel="stylesheet"> <!-- font-awesome icons -->
+<!-- //Custom Theme files -->
 <!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery-2.2.3.min.js"></script>  
 <!-- //js -->
-<!--animate-->
-<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
-<script src="js/wow.min.js"></script>
-	<script>
-		 new WOW().init();
-	</script>
-<!--//end-animate-->
-<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-<!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
-<!-- start-smoth-scrolling -->
-<script src="js/responsiveslides.min.js"></script>
+<!-- web-fonts -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Changa:200,300,400,500,600,700,800" rel="stylesheet">
+<!-- //web-fonts --> 
 </head>
 <body>
-<!-- header -->
-<div class="header_w3l">
-	<div class="container">
-		<nav class="navbar navbar-default">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<h1><a  href="index.html">Clinical<span> Lab </span></a></h1>
+	<!-- banner -->
+	<div  id="home" class="banner">
+		<div class="container">
+			<div class="wthree-header">
+				<div class="agileits-logo navbar-left">
+					<h1><a href="index.html">R & S</a></h1>
+				</div>
+				<div class="navbar-right social-icons"> 
+					<ul>
+						<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
+						<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
+						<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li> 
+						<li><a href="#" class="fa fa-rss icon-border rss"> </a></li>
+					</ul>  
+				</div>
+				<div class="clearfix"> </div>
 			</div>
-				<!-- top-nav -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="index.html" class="active">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="codes.html">Short Codes</a></li>
-					<li><a href="treatments.html">Treatments</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>	
-				<div class="clearfix"> </div>	
+			<div class="w3ls-banner-text">
+				<h2 class="agileinfo">research & science </h2>
+				<p>leadership through innovation</p>
 			</div>
-		</nav>
+			<!-- navigation -->
+			<div class="top-w3lnav">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header w3l-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							Menu 
+						</button>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-center w3l-effect">
+							<li><a href="index.html" class="w3ls-active">Home</a></li>
+							<li><a href="#about" class="scroll">About</a></li> 
+							<li><a href="#lab" class="scroll">Lab</a></li> 
+							<li><a href="#team" class="scroll">Team</a></li>
+							<li><a href="#testimonials" class="scroll">Testimonials</a></li>
+							<li><a href="#contact" class="scroll">Contact</a></li>
+						</ul>	
+						<div class="clearfix"> </div>
+					</div>	
+				</nav>		
+			</div>	
+			<!-- navigation --> 
+		</div> 
 	</div>
-</div>
-<!-- header -->
-<!-- banner -->
-<div class="banner_w3ls w3layouts">
-	<script>
-						// You can also use "$(window).load(function() {"
-						$(function () {
-						 // Slideshow 4
-						$("#slider3").responsiveSlides({
-							auto: true,
-							pager: true,
-							nav: true,
-							speed: 500,
-							namespace: "callbacks",
-							before: function () {
-						$('.events').append("<li>before event fired.</li>");
-						},
-						after: function () {
-							$('.events').append("<li>after event fired.</li>");
-							}
-							});
-						});
-	</script>
-		<div  id="top" class="callbacks_container">
-			<ul class="rslides" id="slider3">
-				<li>
-					<div class="banner-info w3">
-						<div class="banner-text w3l">
-							<h3>WE CARE<span>ABOUT OUR PATIENTS</span></h3>
-							<p>At vero eos et accusamus et iusto odio dignissimos 
-							ducimus qui blanditiis praesentium voluptatum deleniti atque 
-							corrupti quos dolores et quas molestias excepturi. </p>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="banner-info w3ls">
-						<div class="banner-text agileits">
-							<h3>WE ARE FOCUSSED YOU<span>ROUND THE CLOCK</span></h3>
-							<p>At vero eos et accusamus et iusto odio dignissimos 
-							ducimus qui blanditiis praesentium voluptatum deleniti atque 
-							corrupti quos dolores et quas molestias excepturi. </p>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="banner-info agileinfo">
-						<div class="banner-text wthree">
-							<h3>HELPING YOU<span>LIVE YOUR HEALTHY LIFE</span></h3>
-							<p>At vero eos et accusamus et iusto odio dignissimos 
-							ducimus qui blanditiis praesentium voluptatum deleniti atque 
-							corrupti quos dolores et quas molestias excepturi. </p>
-						</div>
-					</div>
-				</li>
-			</ul>
-			<div class="clearfix"></div>
+	<!-- //banner -->
+	<!-- banner bottom -->
+	<div class="wthree-bb">
+		<div class="col-md-6 w3ls-bb-left">
+			<h4>the miracles of science</h4>
 		</div>
-</div>
-<!-- //banner -->
-<!-- banner-bottom -->
-<div class="bottom_wthree">
-	<div class="col-md-6 bottom-left w3-agileits">	
-		<figure class="cube-1">
-			<div class="btm-hov">
-				<div class="btm-wid">
-					<div class="thumbs">
-						<span class="rotate">
-							<a href="#" class="btn">Clinical Lab</a>
-						</span>
-					</div>
-					<div class="fill_fig">
-						<span class="fill"></span>
-						<span class="fill"></span>
-						<span class="fill"></span>
-						<span class="fill"></span>
+		<div class="col-md-6 w3ls-bb-right">
+			<p> Vivamus posuere faucibus magna quis tincidunt. Morbi quam diam, maximus hendrerit sit amet nisl dictum pretium sed, porttitor ac elit.</p>
+		</div>
+		<div class="clearfix"></div>
+		<div class="w3ls-section w3l-bb-grids text-center">
+			<div class="wthree-banner-bottom">
+				<div class="w3l-bbg1">
+					<h5>Lorem ipsum</h5>
+					<p>Vivamus posuere faucibus magna quis tincidunt.</p>
+				</div>
+				<div class="w3l-bbg1 bbg1-w3l">
+					<h5>Lorem ipsum</h5>
+					<p>Vivamus posuere faucibus magna quis tincidunt.</p>
+				</div>
+				<div class="w3l-bbg1">
+					<h5>Lorem ipsum</h5>
+					<p>Vivamus posuere faucibus magna quis tincidunt.</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>	
+		</div>
+	</div>
+	<!--//banner bottom -->
+	<!-- tabs -->
+	<div class="w3ls-section w3-tabs" id="about">
+		<div class="container">
+			<div class="col-md-6 agile_banner_bottom_grids">
+				<h3 class="w3ls-title">our mission</h3>
+				<div id="verticalTab" class="resp-vtabs" style="display: block; width: 100%; margin: 0px;">
+					<ul class="resp-tabs-list">
+						<li class="resp-tab-item resp-tab-active">research</li>
+						<li class="resp-tab-item">energy</li>
+						<li class="resp-tab-item">genetics</li>
+					</ul>
+					<div class="resp-tabs-container">
+						<div class="w3layouts_vertical_tab resp-tab-content resp-tab-content-active" style="display:block">
+							<div class="banner-right-agileits">
+								<h6>Nunc venenatis tortor</h6>
+								   <p><i>" Cras feugiat dui augue, in malesuada sem porta id. Mauris tempor 
+									aliquam risus eget sagittis. Nulla eu imperdiet mauris.</i>
+									Donec felis mi, tristique in sodales non, porttitor id orci. 
+								Mauris vulputate placerat justo vitae sollicitudin. Nunc venenatis tortor 
+								dapibus magna commodo gravida.Suspendisse convallis eu dui at lacinia.
+								</p>
+							</div>
+						</div>
+						<div class="w3layouts_vertical_tab resp-tab-content">
+							<div class="banner-right-agileits">
+								<h6> Nulla eu imperdiet.</h6>
+								   <p><i>" Cras feugiat dui augue, in malesuada sem porta id. Mauris tempor 
+									aliquam risus eget sagittis. Nulla eu imperdiet mauris.</i>Donec felis mi, tristique in sodales non, porttitor id orci. 
+								Mauris vulputate placerat justo vitae sollicitudin. Nunc venenatis tortor 
+								dapibus magna commodo gravida.Suspendisse convallis eu dui at lacinia.
+								</p>
+							</div>
+						</div>
+						<div class="w3layouts_vertical_tab resp-tab-content">
+							<div class="banner-right-agileits">
+								<h6>Suspendisse convallis eum</h6>
+								   <p><i>" Cras feugiat dui augue, in malesuada sem porta id. Mauris tempor 
+									aliquam risus eget sagittis. Nulla eu imperdiet mauris.</i>Donec felis mi, tristique in sodales non, porttitor id orci. 
+								Mauris vulputate placerat justo vitae sollicitudin. Nunc venenatis tortor 
+								dapibus magna commodo gravida.Suspendisse convallis eu dui at lacinia.
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</figure>
-		<div class="clearfix"></div>
+			<div class="col-md-6 w3_agileits-tabgrids">
+				<div class="col-md-6 col-sm-4 col-xs-4 w3_agileits-tabgrid1">
+					<img src="images/tb1.jpg" class="img-responsive" alt="img">
+				</div>
+				<div class="col-md-6 col-sm-8 col-xs-8 w3_agileits-tabgrid1 agile-text">
+					<h5>serving science & technology</h5>
+				</div>
+				<div class="clearfix"></div>
+				<div class="col-md-6 col-sm-8 col-xs-8  w3_agileits-tabgrid1 agile-text">
+					<h5>always ahead facing the unknown</h5>
+				</div>
+				<div class="col-md-6 col-sm-4 col-xs-4 w3_agileits-tabgrid1">
+					<img src="images/tb2.jpg" class="img-responsive" alt="img">
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
 	</div>
-	<div class="col-md-6 bottom-right agileits-w3layouts">
-		<div class="btm-right-grid agile">
-			<h2>Providing Appropriate Health Care For Adult, Seniors and Children</h2>
-			<p>At vero eos et accusamus et iusto odio dignissimos ducimus 
-			qui blanditiis praesentium voluptatum deleniti atque corrupti 
-			quos dolores et quas molestias excepturi sint occaecati 
-			cupiditate non provident, similique sunt in culpa qui
-			quos dolores et quas molestias excepturi sint occaecati 
-			cupiditate non provident, similique sunt in culpa qui
-			officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+<!-- //tabs -->
+	<!-- gallery -->
+	<div id="lab" class="w3ls-section gallery">
+		<div class="container">
+			<h3 class="w3ls-title">our lab</h3> 
+			<div class="gallery-grids">
+				<div class="col-sm-4 col-xs-6 gallery-grid">
+					<div class="grid effect-apollo"> 
+						<a class="example-image-link" href="images/g3.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor.">
+							<img src="images/g3.jpg" alt=""/>
+							<div class="figcaption">
+								<p>Proin vitae luctus dui, sit amet ultricies leo</p>
+							</div>	
+						</a> 
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-6 gallery-grid">
+					<div class="grid effect-apollo"> 
+						<a class="example-image-link" href="images/g2.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor.">
+							<img src="images/g2.jpg" alt=""/>
+							<div class="figcaption">
+								<p>Proin vitae luctus dui, sit amet ultricies leo</p>
+							</div>	
+						</a> 
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-6 gallery-grid">
+					<div class="grid effect-apollo"> 
+						<a class="example-image-link" href="images/g3.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor.">
+							<img src="images/g3.jpg" alt=""/>
+							<div class="figcaption">
+								<p>Proin vitae luctus dui, sit amet ultricies leo</p>
+							</div>	
+						</a> 
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-6 gallery-grid">
+					<div class="grid effect-apollo"> 
+						<a class="example-image-link" href="images/g7.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor.">
+							<img src="images/g7.jpg" alt=""/>
+							<div class="figcaption">
+								<p>Proin vitae luctus dui, sit amet ultricies leo</p>
+							</div>	
+						</a> 
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-6 gallery-grid">
+					<div class="grid effect-apollo"> 
+						<a class="example-image-link" href="images/g8.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor.">
+							<img src="images/g8.jpg" alt=""/>
+							<div class="figcaption">
+								<p>Proin vitae luctus dui, sit amet ultricies leo</p>
+							</div>	
+						</a> 
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-6 gallery-grid">
+					<div class="grid effect-apollo"> 
+						<a class="example-image-link" href="images/g4.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor.">
+							<img src="images/g4.jpg" alt=""/>
+							<div class="figcaption">
+								<p>Proin vitae luctus dui, sit amet ultricies leo</p>
+							</div>	
+						</a> 
+					</div>
+				</div>
+				<div class="clearfix"> </div> 
+				<div class="col-sm-4 col-xs-6 gallery-grid">
+					<div class="grid effect-apollo"> 
+						<a class="example-image-link" href="images/g4.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor.">
+							<img src="images/g4.jpg" alt=""/>
+							<div class="figcaption">
+								<p>Proin vitae luctus dui, sit amet ultricies leo</p>
+							</div>	
+						</a> 
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-6 gallery-grid">
+					<div class="grid effect-apollo"> 
+						<a class="example-image-link" href="images/g5.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor.">
+							<img src="images/g5.jpg" alt=""/>
+							<div class="figcaption">
+								<p>Proin vitae luctus dui, sit amet ultricies leo</p>
+							</div>	
+						</a> 
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-6 gallery-grid">
+					<div class="grid effect-apollo"> 
+						<a class="example-image-link" href="images/g7.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem ac lectus mattis sagittis. Donec pulvinar quam sit amet est vestibulum volutpat. Phasellus sed nibh odio. Phasellus posuere at purus sit amet porttitor.">
+							<img src="images/g7.jpg" alt=""/>
+							<div class="figcaption">
+								<p>Proin vitae luctus dui, sit amet ultricies leo</p>
+							</div>	
+						</a> 
+					</div>
+				</div>
+				
+				<div class="clearfix"> </div> 
+			</div>
+			<script src="js/lightbox-plus-jquery.min.js"> </script>
+		</div>
+	</div>
+	<!-- //gallery -->
+<!-- team -->
+	<div class="w3ls-section w3-team" id="team">
+		<div class="team-dot">
+			<div class="container"> 
+				<div class="agileits-team-grids">
+					<div class="col-md-6 agileits-team-grid1">
+						<h3 class="w3ls-title">our team</h3>
+					</div>
+					<div class="col-md-3 agileits-team-grid">
+						<div class="team-info">
+							<img src="images/t1.jpg" alt="">
+							<div class="team-caption"> 
+								<h4>Peter Parker</h4>
+								<p>Fusce laoreet</p>
+								<div class="social-icons">
+									<ul>
+										<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
+										<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
+										<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li> 
+										<li><a href="#" class="fa fa-rss icon-border rss"> </a></li>
+									</ul> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3  agileits-team-grid">
+						<div class="team-info">
+							<img src="images/t2.jpg" alt="">
+							<div class="team-caption"> 
+								<h4>Johan Botha</h4>
+								<p>Fusce laoreet</p>
+								<div class="social-icons">
+									<ul>
+										<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
+										<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
+										<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li> 
+										<li><a href="#" class="fa fa-rss icon-border rss"> </a></li>
+									</ul> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 agileits-team-grid">
+						<div class="team-info">
+							<img src="images/t3.jpg" alt="">
+							<div class="team-caption"> 
+								<h4>Justo Congue</h4>
+								<p>Fusce laoreet</p>
+								<div class="social-icons">
+									<ul>
+										<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
+										<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
+										<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li> 
+										<li><a href="#" class="fa fa-rss icon-border rss"> </a></li>
+									</ul> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 agileits-team-grid">
+						<div class="team-info">
+							<img src="images/t5.jpg" alt="">
+							<div class="team-caption"> 
+								<h4>Steven Wilson</h4>
+								<p>Fusce laoreet</p>
+								<div class="social-icons">
+									<ul>
+										<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
+										<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
+										<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li> 
+										<li><a href="#" class="fa fa-rss icon-border rss"> </a></li>
+									</ul> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 agileits-team-grid">
+						<div class="team-info">
+							<img src="images/t4.jpg" alt="">
+							<div class="team-caption"> 
+								<h4>Steven Wilson</h4>
+								<p>Fusce laoreet</p>
+								<div class="social-icons">
+									<ul>
+										<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
+										<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
+										<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li> 
+										<li><a href="#" class="fa fa-rss icon-border rss"> </a></li>
+									</ul> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 agileits-team-grid">
+						<div class="team-info">
+							<img src="images/t6.jpg" alt="">
+							<div class="team-caption"> 
+								<h4>Steven Wilson</h4>
+								<p>Fusce laoreet</p>
+								<div class="social-icons">
+									<ul>
+										<li><a href="#" class="fa fa-facebook icon-border facebook"> </a></li>
+										<li><a href="#" class="fa fa-twitter icon-border twitter"> </a></li>
+										<li><a href="#" class="fa fa-google-plus icon-border googleplus"> </a></li> 
+										<li><a href="#" class="fa fa-rss icon-border rss"> </a></li>
+									</ul> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //team -->
+	<div class="agile-slide w3ls-section text-center">
+		<div class="agile-section">
+			<h5>Lorem ipsum dolor sit amet consectetur adipiscing.</h5>
+			<p>Aliquam feugiat tempus justo in vulputate. Praesent venenatis velit lorem, a vestibulum nulla tristique nec. Suspendisse potenti.</p>
+			<a href="#myModal" data-toggle="modal" class="agile-more">Read More</a>
+		</div>
+	</div>
+	<!-- testimonial -->
+	<div class="test w3ls-section" id="testimonials">
+	<div class="container">
+		<div class="col-md-6 col-xs-6  agile-testi">
+			<h3 class="w3ls-title">Testimonials</h3>
+		</div>	
+		<div class="col-md-6 col-xs-6 test-gri1">
+			<div id="owl-demo2" class="owl-carousel">
+				<div class="test-grid1">
+					<img src="images/ts1.jpg" alt="" class="img-r">
+					<p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<h4>Andery</h4>
+				</div>	
+				<div class="agile">
+					<div class="test-grid1">
+						<img src="images/ts2.jpg" alt="" class="img-r">
+						<p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+						<h4>Congue</h4>
+					</div>	
+				</div>
+				<div class="agile">
+					<div class="test-grid1">
+						<img src="images/ts3.jpg" alt="" class="img-r">
+						<p>Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<h4>magna</h4>
+					</div>	
+				</div>					
+			</div>
 		</div>	
 	</div>
-	<div class="clearfix"></div>
 </div>
-<!-- //banner-bottom -->
-<!-- services -->
-<div class="services_agile">
-	<div class="container">
-		<h3 class="title">Our Best Services</h3>
-		<div class="services_right w3-agile">
-			<div class="col-md-4 list-left text-center wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0.1s">
-				<span><img src="images/icon1.png" alt=" "/></span>
-				<h4>Voluptatem</h4>
-				<div class="multi-gd-text"><a href="#"><img class="img-responsive" src="images/p5.jpg" alt=" "/></a></div>
-				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-					sed quia consequuntur magni dolores eos qui</p>
-			</div>
-			<div class="col-md-4 list-left text-center wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0.2s">
-				<span><img src="images/icon2.png" alt=" "/></span>
-				<h4>Voluptatem</h4>
-				<div class="multi-gd-text"><a href="#"><img class="img-responsive" src="images/p6.jpg" alt=" "/></a></div>
-				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-					sed quia consequuntur magni dolores eos qui</p>
-			</div>
-			<div class="col-md-4 list-left text-center wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0.3s">
-				<span><img src="images/icon3.png" alt=" "/></span>
-				<h4>Voluptatem</h4>
-				<div class="multi-gd-text"><a href="#"><img class="img-responsive" src="images/p7.jpg" alt=" "/></a></div>
-				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-					sed quia consequuntur magni dolores eos qui</p>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-</div>
-<!-- //services -->
-
-<!-- care -->
-<div class="care_agileits">
-	<div class="container">
-		<div class="offer agile">
-			<h3>Offering the full spectrum of new treatments</h3>
-			<h4>Nemo enim ipsam voluptatem quia voluptas sit aspernatur</h4>
-			<ul>
-				<li>
-					<div class="offer-left w3-agile">
-						<div class="hi-icon-wrap hi-icon-effect-2 hi-icon-effect-2b">
-							<a href="#" class="hi-icon hi-icon-cog glyphicon glyphicon-education"></a>
-						</div>
+<!-- //testimonial -->
+<!-- contact -->
+	<div class="w3ls-section w3-contact" id="contact">
+		<div class="container"><h3 class="w3ls-title contact-w3ls">contact us</h3></div>
+		<div class="w3ls_map">
+			<div class="contact-left">
+				<div class="w3layouts-address">
+					<div class="address">
+						<h5>Address:</h5>
+						<p>333 Broome New Jersey,10002.</p>
 					</div>
-					<div class="offer-right agileits-w3layouts">
-						<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-						aut odit aut fugit, sed quia consequuntur magni dolores eos qui</p>
+					<div class="address address-mdl">
+						<h5>Phone:</h5>
+						<p>+9900887766</p>
 					</div>
 					<div class="clearfix"></div>
-				</li>
-				<li>
-					<div class="offer-left w3-agileits">
-						<div class="hi-icon-wrap hi-icon-effect-2 hi-icon-effect-2b">
-							<a href="#" class="hi-icon hi-icon-cog glyphicon glyphicon-scissors"></a>
-						</div>
+				</div>	
+				<div class="w3layouts-address">
+					<div class="address">
+						<h5>Email:</h5>
+						<a href="mailto:info@example.com">mail@example.com</a>
 					</div>
-					<div class="offer-right wthree">
-						<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-						aut odit aut fugit, sed quia consequuntur magni dolores eos qui</p>
-					</div>
-					<div class="clearfix"></div>
-				</li>
-				<li>
-					<div class="offer-left agileinfo">
-						<div class="hi-icon-wrap hi-icon-effect-2 hi-icon-effect-2b">
-							<a href="#" class="hi-icon hi-icon-cog glyphicon glyphicon-plus"></a>
-						</div>
-					</div>
-					<div class="offer-right agileits">
-						<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-						aut odit aut fugit, sed quia consequuntur magni dolores eos qui</p>
-					</div>
-					<div class="clearfix"></div>
-				</li>
-			</ul>
+					<div class="address">
+						<h5>Mobile:</h5>
+						<p>+11 222 333</p>
+					</div>	
+				</div>	
+				<div class="clearfix"></div>
+			</div>
+			<iframe src=""></iframe>
+			<div class="contact-form">
+					<form action="#" method="post" class="agileits-form">  
+						<input type="text" name="Name" placeholder="Name" required="">
+						<input type="email" class="email" name="Email" placeholder="Email" required="">
+						<input type="text" name="Name" placeholder="Subject" required="">
+						<textarea name="Message" placeholder="Message" required=""></textarea>
+						<input type="submit" value="SUBMIT" > 
+					</form>
+			</div>
 		</div>
 	</div>
+<!-- contact -->
+<!-- footer -->
+<div class="agileinfo-copyright text-center">
+		<p>Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
 </div>
-<!-- //care -->
-<div class="features_w3 agileits">
-	<div class="container">
-		<h3 class="title">Our Features</h3>
-		<div class="fea_grids w3ls">
-			<div class="col-md-6 fea_grid1">
-				<div class="col-sm-4 fea_left text-center w3ls">
-					<div class="ih-item circle effect1">
-						<a href="#">
-							<div class="spinner"></div>
-							<div class="img"><img src="images/icon1.png" alt="img"></div>
-								<div class="info">
-								  <div class="info-back">
-									
-								  </div>
-								</div>
-						</a>
+<!-- //footer -->
+<!-- Tooltip -->
+	<div class="tooltip-content">
+		<div class="modal fade features-modal" id="myModal"  tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-md">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h3 class="modal-title">R&S</h3>
+					</div>
+					<div class="modal-body">
+						<img src="images/modal.jpg" class="img-responsive" alt="image">
+						<p>Fusce et congue nibh, ut ullamcorper magna. Donec ac massa tincidunt, fringilla sapien vel, tempus massa. Vestibulum felis leo, tincidunt sit amet tristique accumsan. In vitae dapibus metus. Donec nec massa non nulla mattis aliquam egestas et mi.</p>
 					</div>
 				</div>
-				<div class="col-sm-8 fea_right agileinfo">
-					<h4>Consequntur</h4>
-					<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-						aut odit aut fugit, sed quia consequuntur magni dolores eos qui</p>
-				</div>
-				<div class="clearfix"></div>
 			</div>
-			<div class="col-md-6 fea_grid2">
-				<div class="col-sm-8 fea_right fea_two w3-agileits">
-					<h4>Dignissimos</h4>
-					<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-						aut odit aut fugit, sed quia consequuntur magni dolores eos qui</p>
-				</div>
-				<div class="col-sm-4 fea_left fea_one text-center w3layouts">
-					<div class="ih-item circle effect1">
-						<a href="#">
-							<div class="spinner"></div>
-							<div class="img"><img src="images/icon2.png" alt="img"></div>
-								<div class="info">
-								  <div class="info-back">
-									
-								  </div>
-								</div>
-						</a>
-					</div>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			<div class="col-md-6 fea_grid1 fea_bor w3-agileits">
-				<div class="col-sm-4 fea_left text-center">
-					<div class="ih-item circle effect1">
-						<a href="#">
-							<div class="spinner"></div>
-							<div class="img"><img src="images/icon3.png" alt="img"></div>
-								<div class="info">
-								  <div class="info-back">
-									
-								  </div>
-								</div>
-						</a>
-					</div>
-				</div>
-				<div class="col-sm-8 fea_right agileits-w3layouts">
-					<h4>Aspernatur</h4>
-					<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-						aut odit aut fugit, sed quia consequuntur magni dolores eos qui</p>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			<div class="col-md-6 fea_grid2 fea_bor w3">
-				<div class="col-sm-8 fea_right fea_one w3l">
-					<h4>Voluptatem</h4>
-					<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-						aut odit aut fugit, sed quia consequuntur magni dolores eos qui</p>
-				</div>
-				<div class="col-sm-4 fea_left fea_two text-center w3-agileits">
-					<div class="ih-item circle effect1">
-						<a href="#">
-							<div class="spinner"></div>
-							<div class="img"><img src="images/icon4.png" alt="img"></div>
-								<div class="info">
-								  <div class="info-back">
-									
-								  </div>
-								</div>
-						</a>
-					</div>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			<div class="clearfix"></div>
 		</div>
 	</div>
-</div>
-<div class="contact_w3agile">
-	<div class="container">
-		<h2 class="title w3">Get In Touch</h2>
-		<div class="strip"></div>
-		<ul>
-			<li><a class="fb-icon1" href="#"></a></li>
-			<li><a class="fb-icon2" href="#"></a></li>
-			<li><a class="fb-icon3" href="#"></a></li>
-			<li><a class="fb-icon4" href="#"></a></li>
-			<li><a class="fb-icon5" href="#"></a></li>
-		</ul>
-		<form action="#" method="post">
-			<input type="text" value="Name" name="Name" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Name';}">
-			<input type="email" value="Email" name="Email" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Email';}">
-			<textarea name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}" required="">Message</textarea>
-			<div class="con-form text-center">
-				<input type="submit" value="Send">
-			</div>
-		</form>
-		<p class="agileinfo">Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
-	</div>
-</div>
-<!-- smooth scrolling -->
+<!-- //Tooltip -->
+<!-- for-Clients -->
+		<script src="js/owl.carousel.js"></script>
+		<link href="css/owl.carousel.css" rel="stylesheet">
+			<!-- requried-jsfiles-for owl -->
+							        <script>
+									    $(document).ready(function() {
+									      $("#owl-demo2").owlCarousel({
+									        items : 1,
+									        lazyLoad : false,
+									        autoPlay : true,
+									        navigation : false,
+									        navigationText :  false,
+									        pagination : true,
+									      });
+									    });
+									  </script>
+			<!-- //requried-jsfiles-for owl -->
+	<!-- //for-Clients -->	
+	<script src="js/SmoothScroll.min.js"></script> 
+	<!-- start-smooth-scrolling --> 
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>	
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+			
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+	<!-- //end-smooth-scrolling -->	 
+	<!-- smooth-scrolling-of-move-up -->
 	<script type="text/javascript">
 		$(document).ready(function() {
-		/*
+			/*
 			var defaults = {
-			containerID: 'toTop', // fading element id
-			containerHoverID: 'toTopHover', // fading element hover id
-			scrollSpeed: 1200,
-			easingType: 'linear' 
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
 			};
-		*/								
-		$().UItoTop({ easingType: 'easeOutQuart' });
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
 		});
 	</script>
-	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<!-- //smooth scrolling -->
-<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+	<!-- responsive-tabs -->
+	<script src="js/easy-responsive-tabs.js"></script>
+	<script>
+		$(document).ready(function () {
+		$('#verticalTab').easyResponsiveTabs({
+		type: 'vertical',
+		width: 'auto',
+		fit: true
+		});
+		});
+	</script>
+	<!-- //responsive-tabs -->
+	<!-- //smooth-scrolling-of-move-up -->    
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
